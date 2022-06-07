@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+/*.heart-btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}*/
+
+.content{
+	border: 2px solid #eae2e1;
+	padding: 13px 16px;
+	border-radius: 5px;
+	display: flex;
+	cursor: pointer;
+}
+
+.content.heart-active{
+	border-color: #f9b9c4;
+	background: #fbd0d8;
+}
+
+.content .heart{
+	height: 90px;
+	width: 90px;
+	background: url("img/img.png") no-repeat;
+	background-position: left;
+	background-size: 2900%;
+	position: absolute;
+	top: 50%;
+	left: 21%;
+	transform: translate(-50%, -50%);
+}
+
+.heart.heart-active {
+	background-position: right;
+	animation: animate .8s steps(28) 1;
+}
+
+@keyframes animate{
+	0%{
+		background-position: left;
+	}
+
+	100%{
+		100%{
+		background-position: right;
+	}
+	}
+}
+
+.like{
+	margin-left: 30px;
+	font-size: 21px;
+	font-family: 'Montserrat', sans-serif;
+	color: grey;
+}
+
+.like.heart-active{
+	color: black;
+}
+
+.numb:before{
+	content: '12';
+	font-size: 21px;
+	font-weight: 600;
+	font-family: sans-serif;
+	color: #9c9496;
+	margin-left: 7px;
+}
+
+.numb.heart-active:before{
+	content: '13';
+	color: black;
+}
+
